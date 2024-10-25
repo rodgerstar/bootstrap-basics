@@ -5,28 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>forms bootstrap</title>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        /* Custom hover effect */
+        .nav-link {
+            color: white !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #d4f5d4 !important; /* Lighter green for hover effect */
+        }
+
+        /* Navbar Brand Logo */
+        .navbar-brand {
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            transform: scale(1.2); /* Slight zoom-in effect on hover */
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand text-success" href="#">Sole</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon "></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
+
+<nav class="navbar navbar-expand-sm bg-success text-capitalize ">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">
+            <img src="images/hero%20image.png" alt="Avatar logo" style="width: 20px"> Sole</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">shop</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
 
@@ -91,15 +117,15 @@
                     <input id="date" type="date" class="form-control rounded-0" placeholder="dob">
                 </div>
                 <select class="form-select">
-                        <label  class="form-label">Educational level</label>
-                        <option>Primary</option>
-                        <option>Secondary</option>
-                        <option>University</option>
-                        <option>Vocational Training</option>
+                    <label class="form-label">Educational level</label>
+                    <option>Primary</option>
+                    <option>Secondary</option>
+                    <option>University</option>
+                    <option>Vocational Training</option>
                 </select>
 
 
-                <button class="btn btn-success">Register</button>
+                <button class="btn btn-success mt-3">Register</button>
 
             </form>
         </div>
