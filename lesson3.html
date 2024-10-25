@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms bootstrap</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <!--      add a table-->
+            <table class="table text-white table-dark table-hover text-capitalize tab">
+                <tr>
+                    <th>name</th>
+                    <th>gender</th>
+                    <th>email</th>
+                    <th>age</th>
+                </tr>
+                <tr>
+                    <td>rody</td>
+                    <td>male</td>
+                    <td>rody@gmail</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>mercy</td>
+                    <td>female</td>
+                    <td>mercy@gmail</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>merit</td>
+                    <td>female</td>
+                    <td>merit@gmail</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>okwemba</td>
+                    <td>male</td>
+                    <td>mercy@gmail</td>
+                    <td>60</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <h3 class="text-center text-success ">Register Now</h3>
+            <form action="">
+                <div class="my-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input id="name" type="text" class="form-control rounded-0" placeholder="Merciline shikuku">
+                </div>
+                <div class="my-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" type="email" class="form-control rounded-0"
+                           placeholder="Mercilineshikuku@gmail.com">
+                </div>
+                <div class="my-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" type="password" class="form-control rounded-0" placeholder="123456789#">
+                </div>
+                <div class="my-3">
+                    <label for="date" class="form-label">DOB</label>
+                    <input id="date" type="date" class="form-control rounded-0" placeholder="dob">
+                </div>
+                <select class="form-select">
+                        <label  class="form-label">Educational level</label>
+                        <option>Primary</option>
+                        <option>Secondary</option>
+                        <option>University</option>
+                        <option>Vocational Training</option>
+                </select>
+
+
+                <button class="btn btn-success">Register</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
